@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gxrgm$0*q#*v#_)+55s=q$ou2cnnz%n42#q^@d+oi-hb$-3ian
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,12 +77,24 @@ WSGI_APPLICATION = 'maldiveseats_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+} """
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'maldiveseats',
+        'USER': 'udbhav',
+        'PASSWORD': 'DatabaseUdbhavPassword',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
 }
+
 
 
 # Password validation
