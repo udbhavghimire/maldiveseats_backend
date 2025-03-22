@@ -18,7 +18,6 @@ __pycache__/
 db.sqlite3
 db.sqlite3-journal
 media/
-static/
 local_settings.py
 
 # Distribution / packaging
